@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Profile</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div id="profile_switch">
+    <button class="profile_switch_button" onclick="hideShow()">Toggle</button>
+  </div>
+
+  <div id="vendor_profile">
+    <div class="profile_wrap">
+    <h1>Vendor Profile</h1>
+    <img src="images/dog_vendor.jpg" class="profile_pic">
+      <div class="profile_info_wrapper">
+        <p class="profile_info" id = "company_name">Company Name</p>
+        <p class="profile_info" id = "name">Service</p>
+        <p class="profile_info" id = "name">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="host_profile">
+    <div class="profile_wrap">
+    <h1>Host Profile</h1>
+    <img src="images/dog_host.jpg" class="profile_pic">
+      <div class="profile_info_wrapper">
+        <p class="profile_info" id = "name">Name</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function hideShow() {
+      var x = document.getElementById("vendor_profile");
+      var y = document.getElementById("host_profile");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+      } else {
+        x.style.display = "none";
+        y.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
