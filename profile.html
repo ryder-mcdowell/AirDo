@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -9,8 +10,8 @@
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
 </head>
 
@@ -18,9 +19,16 @@
   <ul class="navi">
     <li class="navili"><a class="whiteLink" href="index.html">Home</a></li>
     <li class="drupdown" id="menuz">
-      <div class="dropdown is-right" :class="{'is-active': menuIsActive}"> <div class="dropdown-trigger"> <button class="button is-primary is-medium" @click="activateMenu" aria-haspopup="true" aria-controls="dropdown-menu"> <span>{{login}}</span> <span> <i aria-hidden="true"></i> </span> </button> </div> <div
-      class="dropdown-menu" id="dropdown-menu" role="menu"> <div class="dropdown-content"> <form class="" action="profile.html"method="post"> <input type="text" name="" value="" placeholder="Username..." class="dropdown-item"> </input> <input type="text" class="dropdown-item" name=""
-        placeholder= "Password..." value=""> <hr class="dropdown-divider"> <button type="submit" name="Login" class="button is-primary">Login</button> </form> </div> </div> </div>
+      <div class="dropdown is-right" :class="{'is-active': menuIsActive}">
+        <div class="dropdown-trigger"> <button class="button is-primary is-medium" @click="activateMenu" aria-haspopup="true" aria-controls="dropdown-menu"> <span>{{login}}</span> <span> <i aria-hidden="true"></i> </span> </button> </div>
+        <div class="dropdown-menu" id="dropdown-menu"
+          role="menu">
+          <div class="dropdown-content">
+            <form class="" action="profile.html" method="post"> <input type="text" name="" value="" placeholder="Username..." class="dropdown-item"> </input> <input type="text" class="dropdown-item" name="" placeholder="Password..." value="">
+              <hr class="dropdown-divider"> <button type="submit" name="Login" class="button is-primary">Login</button> </form>
+          </div>
+        </div>
+      </div>
     </li>
   </ul>
   <div id="profile_switch">
@@ -29,22 +37,22 @@
 
   <div id="vendor_profile">
     <div class="profile_wrap">
-    <h1>Vendor Profile</h1>
-    <img src="images/dog_vendor.jpg" class="profile_pic">
+      <h1>Vendor Profile</h1>
+      <img src="images/dog_vendor.jpg" class="profile_pic">
       <div class="profile_info_wrapper">
-        <p class="profile_info" id = "company_name">Company Name</p>
-        <p class="profile_info" id = "name">Service</p>
-        <p class="profile_info" id = "name">Description</p>
+        <p class="profile_info" id="company_name">Company Name</p>
+        <p class="profile_info" id="name">Service</p>
+        <p class="profile_info" id="name">Description</p>
       </div>
     </div>
   </div>
 
   <div id="host_profile">
     <div class="profile_wrap">
-    <h1>Host Profile</h1>
-    <img src="images/dog_host.jpg" class="profile_pic">
+      <h1>Host Profile</h1>
+      <img src="images/dog_host.jpg" class="profile_pic">
       <div class="profile_info_wrapper">
-        <p class="profile_info" id = "name">Name</p>
+        <p class="profile_info" id="name">Name</p>
       </div>
     </div>
   </div>
@@ -65,4 +73,5 @@
     }
   </script>
 </body>
+
 </html>

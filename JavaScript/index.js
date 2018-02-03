@@ -7,20 +7,19 @@ new Vue({
   el: '#menuz',
 
   data: {
-      isActiveClass :"'is-active'",
-      isLoading   : false,
-      menuIsActive : false,
-      login : 'Login'
+    isActiveClass: "'is-active'",
+    isLoading: false,
+    menuIsActive: false,
+    login: 'Login'
   },
   methods: {
 
-    activateMenu(){
+    activateMenu() {
       this.menuIsActive = !this.menuIsActive;
-      this.isLoading = ! this.isLoading;
+      this.isLoading = !this.isLoading;
       if (this.menuIsActive === true) {
         this.login = ''
-      }
-      else {
+      } else {
         this.login = 'Login'
       }
     }

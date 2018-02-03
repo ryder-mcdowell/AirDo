@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 
@@ -14,12 +15,12 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
 	<style type="text/css">
-	#table_column {
-		padding: 10px 20px 10px 10px
-	}
-</style>
+		#table_column {
+			padding: 10px 20px 10px 10px
+		}
+	</style>
 
-  <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 <![endif]-->
 </head>
@@ -28,9 +29,15 @@
 	<ul class="navi">
 		<li class="navili"><a class="whiteLink" href="index.html">Home</a></li>
 		<li class="drupdown" id="menuz">
-			<div class="dropdown is-right" :class="{'is-active': menuIsActive}"> <div class="dropdown-trigger"> <button class="button is-primary is-medium" @click="activateMenu" aria-haspopup="true" aria-controls="dropdown-menu"> <span>{{login}}</span> <span> <i aria-hidden="true"></i> </span> </button> </div> <div
-			class="dropdown-menu" id="dropdown-menu" role="menu"> <div class="dropdown-content"> <form class="" action="profile.html"method="post"> <input type="text" name="" value="" placeholder="Username..." class="dropdown-item"> </input> <input type="text" class="dropdown-item" name=""
-				placeholder= "Password..." value=""> <hr class="dropdown-divider"> <button type="submit" name="Login" class="button is-primary">Login</button> </form> </div> </div> </div>
+			<div class="dropdown is-right" :class="{'is-active': menuIsActive}">
+				<div class="dropdown-trigger"> <button class="button is-primary is-medium" @click="activateMenu" aria-haspopup="true" aria-controls="dropdown-menu"> <span>{{login}}</span> <span> <i aria-hidden="true"></i> </span> </button> </div>
+				<div class="dropdown-menu" id="dropdown-menu" role="menu">
+					<div class="dropdown-content">
+						<form class="" action="profile.html" method="post"> <input type="text" name="" value="" placeholder="Username..." class="dropdown-item"> </input> <input type="text" class="dropdown-item" name="" placeholder="Password..." value="">
+							<hr class="dropdown-divider"> <button type="submit" name="Login" class="button is-primary">Login</button> </form>
+					</div>
+				</div>
+			</div>
 		</li>
 	</ul>
 
@@ -70,4 +77,5 @@
 	<script src="JavaScript/index.js"></script>
 
 </body>
+
 </html>
