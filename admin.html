@@ -25,6 +25,15 @@
 </head>
 
 <body style="background-color: #f8ffd8">
+	<ul class="navi">
+		<li class="navili"><a class="whiteLink" href="index.html">Home</a></li>
+		<li class="drupdown" id="menuz">
+			<div class="dropdown is-right" :class="{'is-active': menuIsActive}"> <div class="dropdown-trigger"> <button class="button is-primary is-medium" @click="activateMenu" aria-haspopup="true" aria-controls="dropdown-menu"> <span>{{login}}</span> <span> <i aria-hidden="true"></i> </span> </button> </div> <div
+			class="dropdown-menu" id="dropdown-menu" role="menu"> <div class="dropdown-content"> <form class="" action="profile.html"method="post"> <input type="text" name="" value="" placeholder="Username..." class="dropdown-item"> </input> <input type="text" class="dropdown-item" name=""
+				placeholder= "Password..." value=""> <hr class="dropdown-divider"> <button type="submit" name="Login" class="button is-primary">Login</button> </form> </div> </div> </div>
+		</li>
+	</ul>
+
 	<center>
 		<h1>Admin Control Panel</h1>
 	</center>
@@ -57,7 +66,8 @@
 			<th id="table_column">User Count</th>
 		</tr>
 	</div>
-
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="JavaScript/index.js"></script>
 
 </body>
 </html>
