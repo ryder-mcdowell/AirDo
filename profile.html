@@ -31,23 +31,39 @@
       </div>
     </li>
   </ul>
-  <div id="profile_switch">
-    <button class="profile_switch_button" onclick="hideShow()">Toggle</button>
+
+
+<div class="" id="vendorToggle">
+  <div class="sideBar">
+    <aside class="menu is-size-4">
+    <p class="menu-label">
+      Dashboard
+    </p>
+    <ul class="menu-list">
+      <li><a>Find a new service</a></li>
+      <li><a>Manage your events</a></li>
+    </ul>
+    <p class="menu-label">
+      Administration
+    </p>
+    <ul class="menu-list">
+
+      <li><a>Order History</a></li>
+      <li @click="hideShow"><a > Manage Your Store</a></li>
+
+    </ul>
+    <p class="menu-label">
+      Settings
+    </p>
+    <ul class="menu-list">
+      <li><a>Account Settings</a></li>
+      <li><a>Administrator Mode</a></li>
+
+    </ul>
+  </aside>
   </div>
 
-  <div id="vendor_profile">
-    <div class="profile_wrap">
-      <h1>Vendor Profile</h1>
-      <img src="images/dog_vendor.jpg" class="profile_pic">
-      <div class="profile_info_wrapper">
-        <p class="profile_info" id="company_name">Company Name</p>
-        <p class="profile_info" id="name">Service</p>
-        <p class="profile_info" id="name">Description</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="host_profile">
+  <div v-if="userX === true">
     <div class="profile_wrap">
       <h1>Host Profile</h1>
       <img src="images/dog_host.jpg" class="profile_pic">
@@ -57,21 +73,23 @@
     </div>
   </div>
 
+
+  <div v-if="vendor === true">
+    <div class="profile_wrap" >
+      <h1>Vendor Profile</h1>
+      <img src="images/dog_vendor.jpg" class="profile_pic">
+      <div class="profile_info_wrapper">
+        <p class="profile_info" id="company_name">Company Name</p>
+        <p class="profile_info" id="name">Service</p>
+        <p class="profile_info" id="name">Description</p>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="JavaScript/index.js"></script>
-  <script>
-    function hideShow() {
-      var x = document.getElementById("vendor_profile");
-      var y = document.getElementById("host_profile");
-      if (x.style.display == "none") {
-        x.style.display = "block";
-        y.style.display = "none";
-      } else {
-        x.style.display = "none";
-        y.style.display = "block";
-      }
-    }
-  </script>
+
 </body>
 
 </html>

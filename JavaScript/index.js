@@ -1,7 +1,18 @@
 new Vue({
-  el: '#root',
-})
+  el: '#vendorToggle',
 
+  data: {
+    vendor: false,
+    userX : true,
+  },
+  methods: {
+    hideShow() {
+      this.vendor = !this.vendor;
+      this.userX = !this.userX;
+    }
+  }
+
+})
 
 new Vue({
   el: '#menuz',

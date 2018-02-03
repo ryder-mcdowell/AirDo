@@ -133,16 +133,19 @@ header.home {
 	top: -2.9em;
 	height: 2.5em;
 }
-
+.inactive{
+	display: none;
+}
 
 /*  PROFILE  */
-#vendor_profile {
-  display: block;
+
+.sideBar{
+	font-size: 16;
+	width: 15%;
+	float:left;
 }
 
-#host_profile {
-  display: none;
-}
+
 
 .profile_wrap {
   text-align: center;
