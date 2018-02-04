@@ -1,15 +1,42 @@
 new Vue({
-  el: '#vendorToggle',
+  el: '#menuToggle',
 
   data: {
-    vendor: false,
+    varbArray : [],
     userX : true,
+    vendor: false,
+    findService : false,
+    switched: 'Store',
   },
+
   methods: {
     hideShow() {
-      this.vendor = !this.vendor;
-      this.userX = !this.userX;
-    }
+      this.setFalse();
+      if (this.switched === 'Store') {
+        this.vendor = true;
+      }
+      if (this.switched === 'Profile') {
+        this.userX = true;
+      }
+      if (this.userX === true) {
+        this.switched = 'Store';
+      }
+      else {
+        this.switched = 'Profile';
+      }
+    },
+    setFalse() {
+      this.userX = false
+      this.vendor = false
+      this.findService = false
+    },
+
+    searchBarGen() {
+      this.setFalse();
+      this.findService = true;
+    },
+
+
   }
 
 })

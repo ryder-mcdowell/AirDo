@@ -89,9 +89,16 @@ header.home {
 .menucontainer{
 	width: 33%;
 }
+.hr{
+	color: hsl(171, 100%, 41%);
+	position: absolute;
+	left: 46.5%;
+	top: -2%;
+	z-index: 999;
+
+}
 .whiteLink {
 	color: white;
-
 }
 .list{
 	width: 25%;
@@ -142,29 +149,35 @@ header.home {
 .menu-list li a:hover {
 	background-color: hsl(204, 86%, 53%);
 }
+.currentHighlight {
+
+	background-color: hsl(204, 86%, 53%);
+
+}
 .menu p  {
 	color: white;
 	background-color: #333;
 }
-.profileMain{
-	margin-top: 0;
-	vertical-align: top;
-	}
+
 
 .sideBar{
 	background-color: rgb(237,237,237);
 	font-size: 16;
-	width: 15%;
+	width: 17%;
 	float:left;
 	border-right: 2px solid #333;
 	border-bottom: 2px solid #333;
-	position: relative;
-	top: -1.5em;
+	position: absolute;
+  top: 7.5%;
 	border-radius:  4px;
-
 }
 
+.profile-searchbar {
+	margin-top: 40px;
+	margin-left: 30px;
+	width: 45%
 
+}
 
 .profile_wrap {
 	text-align: center;
@@ -176,9 +189,6 @@ img.profile_pic {
 	margin-bottom: 3em;
 }
 
-#profile_switch {
-	text-align: center;
-}
 
 /* ADMIN */
 #table_column {
