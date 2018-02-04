@@ -13,12 +13,12 @@ body {
 
 .navbar a {
 	float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 0.4em 0.4em;
-  text-decoration: none;
-  font-size: 17px;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 0.4em 0.4em;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .navbar a:hover {
@@ -50,60 +50,60 @@ header.home {
 	background-color: white;
 }
 .navi {
-    height: 3.6em;
-    margin: 0;
-    border-radius: 0;
-    padding: 0;
+	height: 3.6em;
+	margin: 0;
+	border-radius: 0;
+	padding: 0;
 
-    background-color: #333;
-    z-index: 99;
+	background-color: #333;
+	z-index: 99;
 }
 .drupdown {
-  color: white;
-  float: right;
-  padding-top: 1em;
-  padding-right: 1em;
+	color: white;
+	float: right;
+	padding-top: 1em;
+	padding-right: 1em;
 
 }
 .navi {
-    height: 3.6em;
-    margin: 0;
-    border-radius: 0;
-    padding: 0;
+	height: 3.6em;
+	margin: 0;
+	border-radius: 0;
+	padding: 0;
 
-    background-color: #333;
-    z-index: 99;
+	background-color: #333;
+	z-index: 99;
 }
 .navili {
-    display: block;
-    margin: 0;
-    border-radius: 0;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    float: left;
-    margin: 0;
-    border-radius: 0;
+	display: block;
+	margin: 0;
+	border-radius: 0;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	float: left;
+	margin: 0;
+	border-radius: 0;
 }
 .menucontainer{
-  width: 33%;
+	width: 33%;
 }
 .whiteLink {
-  color: white;
+	color: white;
 
 }
 .list{
-  width: 25%;
-  margin-left: 40%;
-  margin-top: 0;
+	width: 25%;
+	margin-left: 40%;
+	margin-top: 0;
 }
 .liFloatRight {
-  float: right;
-  margin: 0;
-  border-radius: 0;
-  padding: 14px 16px;
-  text-align: center;
+	float: right;
+	margin: 0;
+	border-radius: 0;
+	padding: 14px 16px;
+	text-align: center;
 }
 .search_wrap {
 	margin: 0 auto;
@@ -148,15 +148,20 @@ header.home {
 
 
 .profile_wrap {
-  text-align: center;
+	text-align: center;
 }
 
 img.profile_pic {
-  height: 10em;
-  border-radius: 50%;
-  margin-bottom: 3em;
+	height: 10em;
+	border-radius: 50%;
+	margin-bottom: 3em;
 }
 
 #profile_switch {
-  text-align: center;
+	text-align: center;
+}
+
+/* ADMIN */
+#table_column {
+	padding: 10px 20px 10px 10px
 }
