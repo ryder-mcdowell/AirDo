@@ -130,7 +130,7 @@ header.home {
 .search_inner_wrap button {
 	position: relative;
 	float: right;
-	top: -2.9em;
+	top: -2.57em;
 	height: 2.5em;
 }
 .inactive{
@@ -139,10 +139,29 @@ header.home {
 
 /*  PROFILE  */
 
+.menu-list li a:hover {
+	background-color: hsl(204, 86%, 53%);
+}
+.menu p  {
+	color: white;
+	background-color: #333;
+}
+.profileMain{
+	margin-top: 0;
+	vertical-align: top;
+	}
+
 .sideBar{
+	background-color: rgb(237,237,237);
 	font-size: 16;
 	width: 15%;
 	float:left;
+	border-right: 2px solid #333;
+	border-bottom: 2px solid #333;
+	position: relative;
+	top: -1.5em;
+	border-radius:  4px;
+
 }
 
 
