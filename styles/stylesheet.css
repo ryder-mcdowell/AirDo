@@ -89,6 +89,13 @@ header.home {
 .menucontainer{
 	width: 33%;
 }
+.managecontainer{
+	width: 33%;
+	margin-left: 20%
+}
+.card{
+	margin-top: 5%
+}
 .hr{
 	color: hsl(171, 100%, 41%);
 	position: absolute;

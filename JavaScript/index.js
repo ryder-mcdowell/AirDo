@@ -1,3 +1,39 @@
+var manage =new Vue({
+el: '#manageEvents',
+        data: {
+          newEvent: '',
+          newservice: '',
+          edit: false,
+
+        services: [
+          {
+            description: 'Birthday Party',
+            needed: true
+          },
+          {
+            description: 'Wedding',
+            needed: true
+          }
+        ]
+      }
+        ,
+
+methods: {
+
+
+    addservice() {
+      if (this.newservice.length > 0) {
+        this.services.push({
+          description: this.newservice,
+          needed: true
+        });
+        this.newservice = '';
+      }
+    }
+
+}
+});
+
 new Vue({
   el: '#menuToggle',
 
@@ -5,6 +41,7 @@ new Vue({
     varbArray : [],
     userX : true,
     vendor: false,
+    manageServ: false,
     findService : false,
     switched: 'Store',
   },
@@ -29,13 +66,17 @@ new Vue({
       this.userX = false
       this.vendor = false
       this.findService = false
+      this.manageServ = false
     },
 
     searchBarGen() {
       this.setFalse();
       this.findService = true;
     },
-
+    manageEventsGen() {
+      this.setFalse();
+      this.manageServ = true;
+    }
 
   }
 
