@@ -104,14 +104,17 @@ header.home {
 	z-index: 999;
 
 }
+
 .whiteLink {
 	color: white;
 }
+
 .list{
 	width: 25%;
 	margin-left: 40%;
 	margin-top: 0;
 }
+
 .liFloatRight {
 	float: right;
 	margin: 0;
@@ -119,10 +122,11 @@ header.home {
 	padding: 14px 16px;
 	text-align: center;
 }
+
 .search_wrap {
 	margin: 0 auto;
 	width: 100%;
-	background-color: #3aa3ff;
+	background-color: #333;
 	height: 8em;
 }
 
@@ -147,6 +151,7 @@ header.home {
 	top: -2.57em;
 	height: 2.5em;
 }
+
 .inactive{
 	display: none;
 }
@@ -157,7 +162,6 @@ header.home {
 	background-color: hsl(204, 86%, 53%);
 }
 .currentHighlight {
-
 	background-color: hsl(204, 86%, 53%);
 
 }
@@ -183,7 +187,6 @@ header.home {
 	margin-top: 40px;
 	margin-left: 30px;
 	width: 45%
-
 }
 
 .profile_wrap {
