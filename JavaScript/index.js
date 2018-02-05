@@ -43,7 +43,11 @@ new Vue({
     vendor: false,
     manageServ: false,
     findService : false,
+    requests : false,
+
     switched: 'Store',
+    eventLists: 'Events',
+    responses: 'Reviews'
   },
 
   methods: {
@@ -51,15 +55,20 @@ new Vue({
       this.setFalse();
       if (this.switched === 'Store') {
         this.vendor = true;
+        this.eventLists = 'Listings'
+        this.responses = 'Requests'
       }
       if (this.switched === 'Profile') {
         this.userX = true;
       }
       if (this.userX === true) {
         this.switched = 'Store';
+        this.eventLists = 'Events'
+        this.responses = 'Reviews'
       }
       else {
         this.switched = 'Profile';
+
       }
     },
     setFalse() {
@@ -67,6 +76,7 @@ new Vue({
       this.vendor = false
       this.findService = false
       this.manageServ = false
+      this.requests = false
     },
 
     searchBarGen() {
@@ -74,8 +84,8 @@ new Vue({
       this.findService = true;
     },
     manageEventsGen() {
-      this.setFalse();
-      this.manageServ = true;
+      this.setFalse()
+      this.manageServ = true
     }
 
   }

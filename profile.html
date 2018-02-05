@@ -44,7 +44,8 @@
     </p>
     <ul class="menu-list">
       <li @click="searchBarGen"><a :class="{currentHighlight: findService}">Find a new service</a></li>
-      <li @click="manageEventsGen"><a>Manage your events</a></li>
+      <li @click="manageEventsGen"><a :class="{currentHighlight: manageServ}">Manage your {{eventLists}}</a></li>
+      <li><a>Manage your {{responses}}</a></li>
     </ul>
     <p class="menu-label">
       Administration
@@ -121,7 +122,7 @@
             blah   blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah
               blah  blah  blah  blah  blah  blah
             <br>
-            
+
           </div>
         </div>
         <footer class="card-footer">
